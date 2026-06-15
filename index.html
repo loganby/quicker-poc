@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quicker Shoes - Premium UK Footwear</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Quick<span>er</span></div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Step Into Quality</h1>
+      <p>Premium UK footwear with 30+ years of craftsmanship and excellence</p>
+      <div class="hero-cta">
+        <a href="shop.html" class="btn btn-primary">Browse Collection</a>
+        <a href="#featured" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS SECTION -->
+  <section id="featured">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Products</h2>
+        <p>Discover our signature shoe collections</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- Quickster -->
+        <div class="product-card">
+          <div class="product-image" data-emoji="👟"></div>
+          <div class="product-info">
+            <div class="product-category">Trainers</div>
+            <div class="product-name">Quickster</div>
+            <div class="product-description">
+              Comfortable everyday trainers built for style and performance. Perfect for casual wear and light athletic activities.
+            </div>
+            <div class="product-specs">
+              <span class="badge">Multiple Sizes</span>
+              <span class="badge badge-success">In Stock</span>
+            </div>
+            <div class="product-price">£45.00</div>
+            <div class="product-footer">
+              <button class="btn btn-primary" onclick="addToCart('Quickster', '£45.00')">Add to Cart</button>
+              <a href="shop.html#quickster" class="btn btn-outline">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quicktown -->
+        <div class="product-card">
+          <div class="product-image" data-emoji="👞"></div>
+          <div class="product-info">
+            <div class="product-category">Formal Shoes</div>
+            <div class="product-name">Quicktown</div>
+            <div class="product-description">
+              Sophisticated formal shoes crafted for the modern professional. Elegant design meets comfort for business and special occasions.
+            </div>
+            <div class="product-specs">
+              <span class="badge">Premium Build</span>
+              <span class="badge badge-success">In Stock</span>
+            </div>
+            <div class="product-price">£60.00</div>
+            <div class="product-footer">
+              <button class="btn btn-primary" onclick="addToCart('Quicktown', '£60.00')">Add to Cart</button>
+              <a href="shop.html#quicktown" class="btn btn-outline">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section style="background: var(--light);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose Quicker?</h2>
+        <p>Three decades of excellence in UK footwear</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🏭</div>
+          <h3>UK Made</h3>
+          <p>30+ years of quality craftsmanship right here in the UK. Supporting local manufacturing excellence.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Premium Quality</h3>
+          <p>Every pair built with durable materials and rigorous quality control to ensure lasting comfort.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">😊</div>
+          <h3>Customer Trust</h3>
+          <p>Trusted by thousands of satisfied customers worldwide. Fast shipping and hassle-free returns guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SECTION -->
+  <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; text-align: center;">
+    <div class="container">
+      <h2>Get 10% Off Your First Order</h2>
+      <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem;">Subscribe to our newsletter for exclusive deals and new arrivals</p>
+      <form style="max-width: 400px; margin: 0 auto;">
+        <div style="display: flex; gap: 0.5rem;">
+          <input type="email" placeholder="Enter your email" required style="flex: 1; background: white; color: var(--text-dark);">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About Quicker</h4>
+        <p>Premium UK footwear brand with over 30 years of quality craftsmanship and customer satisfaction.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html">Trainers</a></li>
+          <li><a href="shop.html">Formal Shoes</a></li>
+          <li><a href="shop.html">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Shipping Info</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Warranty</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Quicker Shoes. All rights reserved. Made in the UK.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

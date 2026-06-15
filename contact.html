@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Quicker Shoes</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Quick<span>er</span></div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="hero" style="padding: 3rem 2rem;">
+    <div class="hero-content">
+      <h1>Get In Touch</h1>
+      <p>We'd love to hear from you. Contact our team with any questions or concerns.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Information</h2>
+        <p>Multiple ways to reach us</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <form>
+          <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Send us a Message</h3>
+          
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required style="padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px;">
+              <option value="">Select a subject...</option>
+              <option value="order">Order Inquiry</option>
+              <option value="return">Returns & Exchanges</option>
+              <option value="product">Product Information</option>
+              <option value="complaint">Complaint</option>
+              <option value="feedback">General Feedback</option>
+              <option value="partnership">Partnership Opportunity</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us how we can help..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Reach Us Directly</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p><a href="mailto:support@quickershoes.co.uk">support@quickershoes.co.uk</a></p>
+              <p style="font-size: 0.9rem; color: var(--text-light);">We typically reply within 24 hours</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <p><a href="tel:+441234567890">+44 (0) 123 456 7890</a></p>
+              <p style="font-size: 0.9rem; color: var(--text-light);">Mon-Fri: 9am-5pm GMT</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-text">
+              <h4>Address</h4>
+              <p>Quicker Shoes Ltd<br>
+              Unit 5, Manchester Business Park<br>
+              Manchester, M17 1ST<br>
+              United Kingdom</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-text">
+              <h4>Business Hours</h4>
+              <p>Monday - Friday: 9:00am - 5:00pm<br>
+              Saturday: 10:00am - 2:00pm<br>
+              Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT CATEGORIES -->
+  <section style="background: var(--light);">
+    <div class="container">
+      <div class="section-header">
+        <h2>How Can We Help?</h2>
+        <p>Quick guides for common inquiries</p>
+      </div>
+
+      <table class="specs-table">
+        <thead>
+          <tr>
+            <th>Issue</th>
+            <th>What to Do</th>
+            <th>Expected Response</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="label">Track Your Order</td>
+            <td>Check your confirmation email for tracking number or <a href="#">view orders here</a></td>
+            <td>Immediate</td>
+          </tr>
+          <tr>
+            <td class="label">Return or Exchange</td>
+            <td>Contact us within 30 days with order number and reason for return</td>
+            <td>24 hours</td>
+          </tr>
+          <tr>
+            <td class="label">Sizing Question</td>
+            <td>Check our <a href="shop.html">size guide</a> or contact support with your measurements</td>
+            <td>24 hours</td>
+          </tr>
+          <tr>
+            <td class="label">Product Defect</td>
+            <td>Provide photos of the defect, order number, and description of the issue</td>
+            <td>24-48 hours</td>
+          </tr>
+          <tr>
+            <td class="label">Payment Issue</td>
+            <td>Contact us immediately with order number and payment details (partial only)</td>
+            <td>2-4 hours</td>
+          </tr>
+          <tr>
+            <td class="label">Bulk Order Inquiry</td>
+            <td>Send detailed requirements including quantities and desired delivery date</td>
+            <td>24-48 hours</td>
+          </tr>
+          <tr>
+            <td class="label">General Inquiry</td>
+            <td>Use the contact form above or call during business hours</td>
+            <td>24 hours</td>
+          </tr>
+          <tr>
+            <td class="label">Warranty Claim</td>
+            <td>Provide purchase confirmation, photos of defect, and description</td>
+            <td>2-3 days</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- LIVE CHAT ALTERNATIVE -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Additional Support Options</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">❓</div>
+          <h3>FAQ Section</h3>
+          <p>Browse our comprehensive FAQ covering shipping, returns, sizing, warranty, and more.</p>
+          <a href="faq.html" class="btn btn-secondary" style="margin-top: 1rem;">View FAQ</a>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Social Media</h3>
+          <p>Follow us on social media @quickershoes for updates, tips, and customer spotlights.</p>
+          <div style="margin-top: 1rem;">
+            <a href="#" style="color: var(--primary); margin-right: 1rem;">Facebook</a>
+            <a href="#" style="color: var(--primary); margin-right: 1rem;">Instagram</a>
+            <a href="#" style="color: var(--primary);">Twitter</a>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📖</div>
+          <h3>Knowledge Base</h3>
+          <p>Access detailed guides on product care, sizing, shipping information, and more.</p>
+          <a href="shop.html" class="btn btn-secondary" style="margin-top: 1rem;">Browse Guides</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section style="background: var(--light);">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Customers Say</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <p style="font-style: italic; margin-bottom: 1rem;">"Absolutely love my Quicksters! Comfortable from day one, excellent quality, and the customer service was outstanding."</p>
+          <p><strong>Sarah M.</strong> - Verified Customer</p>
+          <p style="color: var(--accent);">⭐⭐⭐⭐⭐</p>
+        </div>
+
+        <div class="feature-card">
+          <p style="font-style: italic; margin-bottom: 1rem;">"The Quicktown shoes are perfect for the office. Great fit, professional look, and they last forever. Best investment in shoes I've made."</p>
+          <p><strong>James K.</strong> - Verified Customer</p>
+          <p style="color: var(--accent);">⭐⭐⭐⭐⭐</p>
+        </div>
+
+        <div class="feature-card">
+          <p style="font-style: italic; margin-bottom: 1rem;">"Impressed with the whole experience. Fast shipping, excellent packaging, and the shoes exceeded my expectations. UK made quality!"</p>
+          <p><strong>Emma T.</strong> - Verified Customer</p>
+          <p style="color: var(--accent);">⭐⭐⭐⭐⭐</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About Quicker</h4>
+        <p>Premium UK footwear brand with over 30 years of quality craftsmanship and customer satisfaction.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html">Trainers</a></li>
+          <li><a href="shop.html">Formal Shoes</a></li>
+          <li><a href="shop.html">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Shipping Info</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Warranty</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Quicker Shoes. All rights reserved. Made in the UK.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

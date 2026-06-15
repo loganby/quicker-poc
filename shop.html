@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Quicker Shoes</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Quick<span>er</span></div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="hero" style="padding: 3rem 2rem;">
+    <div class="hero-content">
+      <h1>Our Collection</h1>
+      <p>Premium footwear crafted with quality and style</p>
+    </div>
+  </section>
+
+  <!-- PRODUCT FILTERS -->
+  <section>
+    <div class="container">
+      <div style="margin-bottom: 2rem; padding: 1.5rem; background: var(--light); border-radius: 8px;">
+        <h3 style="margin-bottom: 1rem;">Filter & Sort</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+          <div>
+            <label style="display: block; margin-bottom: 0.5rem;">Category</label>
+            <select style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px;">
+              <option>All Categories</option>
+              <option>Trainers</option>
+              <option>Formal Shoes</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; margin-bottom: 0.5rem;">Price Range</label>
+            <select style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px;">
+              <option>All Prices</option>
+              <option>£0 - £50</option>
+              <option>£50 - £100</option>
+              <option>£100+</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; margin-bottom: 0.5rem;">Sort By</label>
+            <select style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px;">
+              <option>Popularity</option>
+              <option>Newest</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT GRID -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>All Products</h2>
+      </div>
+
+      <div class="product-grid">
+        <!-- Quickster - Card 1 -->
+        <div class="product-card" id="quickster">
+          <div class="product-image" data-emoji="👟"></div>
+          <div class="product-info">
+            <div class="product-category">Trainers</div>
+            <div class="product-name">Quickster</div>
+            <div class="product-description">
+              Comfortable everyday trainers built for style and performance. Perfect for casual wear and light athletic activities.
+            </div>
+            <div class="product-specs">
+              <strong>Features:</strong>
+              <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li>Breathable mesh upper</li>
+                <li>Cushioned sole</li>
+                <li>Lightweight design</li>
+                <li>Multiple color options</li>
+              </ul>
+            </div>
+            <div class="product-price">£45.00</div>
+            <div style="margin-bottom: 1rem;">
+              <button class="btn btn-outline" onclick="showSizeGuide()" style="width: 100%; margin-bottom: 0.5rem;">Size Guide</button>
+            </div>
+            <div class="product-footer">
+              <button class="btn btn-primary" onclick="addToCart('Quickster', '£45.00')">Add to Cart</button>
+              <select style="flex: 0.8; padding: 0.6rem 0.5rem; border: 1px solid var(--border); border-radius: 4px; cursor: pointer;">
+                <option>Size: 10</option>
+                <option>Size: 6</option>
+                <option>Size: 7</option>
+                <option>Size: 8</option>
+                <option>Size: 9</option>
+                <option>Size: 11</option>
+                <option>Size: 12</option>
+                <option>Size: 13</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quicktown - Card 2 -->
+        <div class="product-card" id="quicktown">
+          <div class="product-image" data-emoji="👞"></div>
+          <div class="product-info">
+            <div class="product-category">Formal Shoes</div>
+            <div class="product-name">Quicktown</div>
+            <div class="product-description">
+              Sophisticated formal shoes crafted for the modern professional. Elegant design meets comfort for business and special occasions.
+            </div>
+            <div class="product-specs">
+              <strong>Features:</strong>
+              <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li>Premium leather construction</li>
+                <li>Comfort cushioning</li>
+                <li>Professional finish</li>
+                <li>Classic styling</li>
+              </ul>
+            </div>
+            <div class="product-price">£60.00</div>
+            <div style="margin-bottom: 1rem;">
+              <button class="btn btn-outline" onclick="showSizeGuide()" style="width: 100%; margin-bottom: 0.5rem;">Size Guide</button>
+            </div>
+            <div class="product-footer">
+              <button class="btn btn-primary" onclick="addToCart('Quicktown', '£60.00')">Add to Cart</button>
+              <select style="flex: 0.8; padding: 0.6rem 0.5rem; border: 1px solid var(--border); border-radius: 4px; cursor: pointer;">
+                <option>Size: 10</option>
+                <option>Size: 6</option>
+                <option>Size: 7</option>
+                <option>Size: 8</option>
+                <option>Size: 9</option>
+                <option>Size: 11</option>
+                <option>Size: 12</option>
+                <option>Size: 13</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Special Edition (Additional product for variety) -->
+        <div class="product-card">
+          <div class="product-image" data-emoji="✨"></div>
+          <div class="product-info">
+            <div class="product-category">Limited Edition</div>
+            <div class="product-name">Quickster Elite</div>
+            <div class="product-description">
+              Premium variant of our bestselling trainer with enhanced materials and exclusive colorways.
+            </div>
+            <div class="product-specs">
+              <span class="badge badge-warning">Limited Stock</span>
+              <span class="badge">Exclusive</span>
+            </div>
+            <div class="product-price">£65.00</div>
+            <div class="product-footer">
+              <button class="btn btn-primary" onclick="addToCart('Quickster Elite', '£65.00')">Add to Cart</button>
+              <a href="#" class="btn btn-outline">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section style="background: var(--light);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Product Comparison</h2>
+        <p>Compare our products side by side</p>
+      </div>
+
+      <table class="specs-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Quickster</th>
+            <th>Quicktown</th>
+            <th>Quickster Elite</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="label">Price</td>
+            <td>£45.00</td>
+            <td>£60.00</td>
+            <td>£65.00</td>
+          </tr>
+          <tr>
+            <td class="label">Category</td>
+            <td>Trainers</td>
+            <td>Formal</td>
+            <td>Premium Trainers</td>
+          </tr>
+          <tr>
+            <td class="label">Material</td>
+            <td>Mesh & Synthetic</td>
+            <td>Premium Leather</td>
+            <td>Premium Mesh & Leather</td>
+          </tr>
+          <tr>
+            <td class="label">Weight</td>
+            <td>Lightweight</td>
+            <td>Medium</td>
+            <td>Ultra-lightweight</td>
+          </tr>
+          <tr>
+            <td class="label">Cushioning</td>
+            <td>Standard</td>
+            <td>Premium</td>
+            <td>Enhanced</td>
+          </tr>
+          <tr>
+            <td class="label">Sizes Available</td>
+            <td>6-13 (UK)</td>
+            <td>6-13 (UK)</td>
+            <td>7-12 (UK)</td>
+          </tr>
+          <tr>
+            <td class="label">Warranty</td>
+            <td>1 Year</td>
+            <td>2 Years</td>
+            <td>2 Years</td>
+          </tr>
+          <tr>
+            <td class="label">Breathability</td>
+            <td>High</td>
+            <td>Medium</td>
+            <td>Very High</td>
+          </tr>
+          <tr>
+            <td class="label">Durability</td>
+            <td>Excellent</td>
+            <td>Excellent</td>
+            <td>Premium</td>
+          </tr>
+          <tr>
+            <td class="label">Stock Status</td>
+            <td><span class="badge badge-success">In Stock</span></td>
+            <td><span class="badge badge-success">In Stock</span></td>
+            <td><span class="badge badge-warning">Limited</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SIZE GUIDE TABLE -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Size Guide</h2>
+        <p>Find your perfect fit</p>
+      </div>
+
+      <table class="specs-table" style="max-width: 800px; margin: 0 auto;">
+        <thead>
+          <tr>
+            <th>UK Size</th>
+            <th>EU Size</th>
+            <th>US Size</th>
+            <th>Foot Length (cm)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="label">6</td>
+            <td>39</td>
+            <td>7</td>
+            <td>23.5</td>
+          </tr>
+          <tr>
+            <td class="label">7</td>
+            <td>40</td>
+            <td>8</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td class="label">8</td>
+            <td>41</td>
+            <td>9</td>
+            <td>24.6</td>
+          </tr>
+          <tr>
+            <td class="label">9</td>
+            <td>42</td>
+            <td>10</td>
+            <td>25.1</td>
+          </tr>
+          <tr>
+            <td class="label">10</td>
+            <td>43</td>
+            <td>11</td>
+            <td>25.7</td>
+          </tr>
+          <tr>
+            <td class="label">11</td>
+            <td>44</td>
+            <td>12</td>
+            <td>26.2</td>
+          </tr>
+          <tr>
+            <td class="label">12</td>
+            <td>46</td>
+            <td>13</td>
+            <td>27.3</td>
+          </tr>
+          <tr>
+            <td class="label">13</td>
+            <td>47</td>
+            <td>14</td>
+            <td>27.9</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CARE INSTRUCTIONS TABLE -->
+  <section style="background: var(--light);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Care Instructions</h2>
+        <p>Keep your shoes looking great</p>
+      </div>
+
+      <table class="specs-table" style="max-width: 900px; margin: 0 auto;">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Cleaning</th>
+            <th>Drying</th>
+            <th>Storage</th>
+            <th>Special Care</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="label">Quickster</td>
+            <td>Wipe with damp cloth, mild soap</td>
+            <td>Air dry at room temperature</td>
+            <td>Keep in cool, dry place</td>
+            <td>Avoid direct heat</td>
+          </tr>
+          <tr>
+            <td class="label">Quicktown</td>
+            <td>Use leather cleaner, soft brush</td>
+            <td>Stuff with newspaper, air dry</td>
+            <td>Use shoe trees, dark cabinet</td>
+            <td>Apply leather conditioner monthly</td>
+          </tr>
+          <tr>
+            <td class="label">Quickster Elite</td>
+            <td>Premium cleaner recommended</td>
+            <td>Air dry away from heat/sunlight</td>
+            <td>Premium shoe storage box</td>
+            <td>Protect with spray, condition regularly</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About Quicker</h4>
+        <p>Premium UK footwear brand with over 30 years of quality craftsmanship and customer satisfaction.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html">Trainers</a></li>
+          <li><a href="shop.html">Formal Shoes</a></li>
+          <li><a href="shop.html">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Shipping Info</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Warranty</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Quicker Shoes. All rights reserved. Made in the UK.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
