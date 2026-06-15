@@ -9,3 +9,12 @@ take inspiration from popular shoe sites like Nike... But bear in mind this is f
 Include a variety of web design components like tables.
 Keep it simple, invent images as you need
 ```
+
+```output
+ok. so i'm going to put this into a github repo. could you add a gitlab actions workflow that makes sure that this gets published?
+```
+
+```output
+init repo. add remote. push
+https://github.com/Gordonby/quicker-poc.git
+```
